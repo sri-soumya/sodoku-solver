@@ -72,8 +72,6 @@ solveBtn.addEventListener("click", () => {
   }
 });
 
-console.log(mat);
-
 function validSudoku() {
   var row = new Array(9);
   var col = new Array(9);
@@ -144,7 +142,6 @@ function solveSudoku() {
     }
     if (j < 9 && mat[i][j] == -1) break;
   }
-  console.log(i + " " + j);
 
   if (i == 9 && j == 9) return true;
 
